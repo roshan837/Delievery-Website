@@ -18,16 +18,7 @@ function Form() {
           name
         };
         console.log(e,formData);
-        // axios.post('http://localhost:8000/api/submit', formData)
-        //   .then(response => {
-        //     console.log(response.data);
-        //     // Handle the response as needed
-        //   })
-        //   .catch(error => {
-        //     console.error(error);
-        //     // Handle the error as needed
-        //   });
-          axios.get('http://localhost:8000/test')
+        axios.post('http://localhost:5000/user/submit', formData)
           .then(response => {
             console.log(response.data);
             // Handle the response as needed
